@@ -98,3 +98,36 @@ Up to 72 hours. We do not expect you to complete the assessment in this time.
     - **See the Python script:** `sample-data/generate_data.py` 
 
 Thanks!
+
+## Solucion
+
+Esta es la solucion de Ricardo Alberto Machorro Vences para el puesto de programador junior
+
+## Cosas a tomar en cuenta
+
+Para esta solucion se necesita ejecutar el script python en la cual se tendra que hacer de la siguiente manera
+
+python TaskPayer.py latiud_sucursal longitud_sucursal
+
+Ademas se tendra que tener en la misma direccion del script titulado TaskPayer.py en un archivo json titulado taxpayers.json
+
+## Consideraciones
+
+Se considero para la solucion sacar el promedio de los datos de los clientes para calcular los pesos para dar con el valor de "score"
+
+Para eso se tomo en cuenta que si los siguientes datos se pasan  del valor promedio el el peso disminuye y si no se da el
+punto completo:
+
+- edad
+- distancia
+- ofertas rechazadas
+- tiempo de repsuesta
+
+Para el resto de los datos se tomo de manera inversa, es decir , que  si el dato es menor que el promedio  el el peso disminuye y si no se da el punto completo:
+
+- ofertas aceptadas
+
+
+Para lo de la prioridad de clientes con poca informacion se tomo en cuenta que si el valor sumado del cliente de oferta rechazadas
+ y aceptadas era menor al del promedio (es decir a la suma del promedio de ofertas rechazadas y aceptadas) se uniria a la lista
+ 
